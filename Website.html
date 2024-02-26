@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriya Palla - Personal Website</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #076474;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        footer {
+            background-color :#076474;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            
+            bottom: 0;
+            width: 100%;
+            
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Sriya Palla</h1>
+        <p>Student</p>
+        <nav>
+            <a href="#" onclick="toggleSection('about')">About</a>
+            <a href="#" onclick="toggleSection('portfolio')">Portfolio</a>
+            <a href="#" onclick="toggleSection('contact')">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a motivated and passionate computer science student with a passion for technology and problem-solving. Throughout my academic journey, I have developed a strong foundation in programming languages such as C,C++, Python and JavaScript.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <ul>
+            <li> <b>Project - 1</b><br>STUDENT RECORD <br>The student record management program written in C
+                language, stimulates student records for an institution. It
+                is highly useful tool for the institutions to maintain,
+                organize and retrieve specific details of a student
+                enrolled.</li>
+            <li><b>Project - 2</b><br>MOVIE TICKETING SYSTEM <br>This project is focused on customer ticket booking
+                services in theatre. This project shows how flexible C
+                language is. The online movie ticket booking system
+                allows users to browse and book movie tickets
+                conveniently through a web-based platform.</li>
+            <li> <b>Project - 3</b><br>HOTEL MANAGEMENT SYSTEM <br>A text - based application written in C++ language that
+                assists in room booking and customer record
+                management. It requires secure login credentials to
+                access the data.</li>
+                
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>You can reach me via email at <a href="sriya_palla@srmap.eu.in"> sriya_palla@srmap.edu.in</a>.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sriya Palla</p>
+    </div>
+</footer>
+
+<script>
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === 'none' || section.style.display === '') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
